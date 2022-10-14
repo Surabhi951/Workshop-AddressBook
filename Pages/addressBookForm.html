@@ -10,12 +10,23 @@
 <body>
     <header class="header-content header">
         <div class="logo-content">
-            <img src="../assets/images/addressbookimage.png" alt="">
+            <img src="../assets/images/addressbookimage.png" height="40" width="50" style="padding-right: 10px;" alt="">
             <div>
                  <span class="address-text">ADDRESS</span><br>
                  <span class="address-text address-book">BOOK</span><br>
             </div>
         </div>
     </header>
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save(event); flase" onreset="reset()">
+            <div class="form-head">
+                <span class="form-head-text">PERSON ADDRESS FORM</span>
+                <span class="cross_icon">
+                    <img src="../assets/images/cross_image.png" class="close-circle" name="close-circle" onclick="cancel();">
+                </span>
+            </div>
+        </form>
+    </div>
+    
 </body>
 </html>
