@@ -25,8 +25,78 @@
                     <img src="../assets/images/cross_image.png" class="close-circle" name="close-circle" onclick="cancel();">
                 </span>
             </div>
-        </form>
-    </div>
+
+            <form class="form" action="#" onsubmit="save(); return false">
+                <label class="label text" for="name"></label>
+                <div class="row-content">
+                    <input class="input" type="text" id="name" name="name" placeholder="Enter Full Name" required>
+                    <error-output class="name-error" for="name"></error-output>
+                </div>
     
-</body>
+                <label class="label text" for="address"></label>
+                <div class="row-content">
+                    <textarea class="input" name="address" rows="5" id="address" placeholder="Enter Address"></textarea>
+                    <error-output class="address-error" for="address"></error-output>
+                </div>
+
+                <div class="row">
+                    <div class="input-content">
+                        <label class="label text" for="city"></label>
+                        <div class="row-content">
+                            <select class="input" name="city" id="city">
+                              <option value="0">Select City</option>
+                              <option value="Others">Others</option>
+                              <option value="Agra">Agra</option>
+                              <option value="Ahmedabad">Ahmedabad</option>
+                              <option value="Bangalore">Bangalore</option>
+                              <option value="Bhopal">Bhopal</option>
+                              <option value="Hyderabad">Hyderabad</option>
+                              <option value="Jaipur">Jaipur</option>
+                              <option value="Kolkata">Kolkata</option>
+                              <option value="Lucknow">Lucknow</option>
+                              <option value="Mumbai">Mumbai</option>
+                              <option value="Nagpur">Nagpur</option>
+                              <option value="Pimpri Chinchwad">Pimpri Chinchwad</option>
+                              <option value="Pune">Pune</option>
+                              <option value="Rajkot">Rajkot</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-content">
+                        <label class="label text" for="state"></label>
+                        <div class="row-content">
+                            <select class="input" name="state" id="state">
+                                <option value="0">Select State</option>
+                                <option value="Others">Others</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="West Bangal">West Bangal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-content">
+                        <label class="label text" for="zip"></label>
+                        <div class="row-content">
+                            <input class="input" type="number" id="zip" name="zip" placeholder="Enter Zip Code" required>
+                        </div>
+                    </div>
+                
+                <label class="label text" for="phone"></label>
+                <div class="row-content">
+                    <input class="input" type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                    <error-output class="phone-error" for="phone"></error-output>
+                </div>
+    
+            </form>
+        </div>
+    </body>
 </html>
