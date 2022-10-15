@@ -60,18 +60,6 @@ function createAndUpdateStorage(contactList) {
   localStorage.setItem("AddressBookList", JSON.stringify(addressBookList));
 }
 
-const createId = () => {
-  var id = localStorage.getItem("currentId");
-  if (id == undefined) {
-      localStorage.setItem("currentId", 1);
-      return 2;
-  } else {
-      id = id + 1;
-      localStorage.setItem("currentId", id);
-      return id;
-  }
-};
-
 const resetForm = () => {
   setValue('#name', '');
   setValue('#phone', '');
